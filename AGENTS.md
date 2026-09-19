@@ -51,15 +51,15 @@ company-os/
 - **Hardware**: GTX 1650 Mobile 4GB, 23GB RAM, CachyOS
 - **Company rule**: 100% failure if any key untested/failing
 
-## Working API Keys (7)
+## Working API Keys (actual state, Sep 19 2026)
 
 | Provider | Status |
 |----------|--------|
-| HuggingFace (HF_TOKEN) | ✅ Working |
-| OpenRouter x2 | ✅ Working |
-| NVIDIA x2 | ✅ Working |
+| HuggingFace (HF_TOKEN) | ❌ Broken — DNS resolution failure |
+| OpenRouter x2 | ❌ Broken — 402 no credits on both keys |
+| NVIDIA x2 (was x2, now x5) | ❌ Broken — all 5 keys return 404 |
 | Cohere | ✅ Working |
-| Cloudflare | ✅ Working |
+| Cloudflare | ❌ Broken — no accounts on key |
 
 ## Hallucination Watchlist
 
