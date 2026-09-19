@@ -91,6 +91,19 @@
 | 36 unverified claims | 🟡 Need testing |
 | Judge verdicts | 🔄 PENDING |
 
+## Jev Research (Sep 19)
+
+| Item | Status |
+|------|--------|
+| Jev pricing | ✅ $0.042/M input, output free |
+| Jev latency | ✅ 70-500ms (vendor), ~250ms independent |
+| Jev accuracy | ⚠️ 67.8% (vendor eval), mid-tier |
+| Independent test | ✅ 777 judgments <0.7s, ~$0.0025 |
+| Browser Use + Jev | ✅ Feasible on Acer |
+| Acer feasibility | ⚠️ Works, disk space tight (29GB free) |
+| Early access | ⚠️ Waitlist only, not GA |
+| Real benchmarks doc | ✅ `jev-research-brief-2026-09-19.md` |
+
 ## Academy CE (hermes-profile-packs)
 
 | Item | Status |
