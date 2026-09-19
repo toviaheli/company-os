@@ -21,7 +21,6 @@ to prevent repeating tests and document results for future agents.
 - Ngram-cache: 13.8 tok/s gen (vs baseline 20.0) — lookup overhead too high
 - **Speculative decoding NOT beneficial on 4GB VRAM for Ornith-1.5-9B**
 - Baseline CUDA IQ2_XXS at 20.0 tok/s remains the best
-- Research doc: /home/tov/speculative-decoding-research.md ✅
 
 ## Techniques Tested & Rejected
 - Vulkan backend: 6-7× slower than CUDA on 4GB VRAM
@@ -54,7 +53,7 @@ to prevent repeating tests and document results for future agents.
 - ACTUAL RESULT: DFlash1 2.7 tok/s, Ngram-cache 13.8 tok/s — BOTH SLOWER than baseline 20.0 tok/s
 - **Verdict: Speculative decoding NOT beneficial on 4GB VRAM for Ornith-1.5-9B**
 
-## All Tests Complete — No Further Testing Needed
+## Testing Status — Scoped Tests Complete; 10+ Techniques Remain Untested
 - Vulkan backend: FAILED ✅
 - SM75 build: FAILED ✅
 - DFlash1: SLOWER ✅
@@ -65,7 +64,7 @@ to prevent repeating tests and document results for future agents.
 - **Baseline CUDA IQ2_XXS at 20.0 tok/s remains the best achievable on this hardware**
 
 ## Cutting-Edge Findings Applied
-- DFlash2: Current best speculative decoding for old GPUs (vLLM implementation)
+- DFlash2: Only available for Qwen3.8-27B, NOT for Ornith-1.5-9B
 - SpecMemo: Speculative decoding for pocket-sized models
 - Prompt lookup drafting: 381 tok/s achieved in Cloud Codes video
 - Custom draft vocabularies: 97.5% acceptance rate

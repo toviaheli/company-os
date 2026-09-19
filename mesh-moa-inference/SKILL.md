@@ -454,7 +454,7 @@ No tool combines midrashic/Haggadic hermeneutics with RAG verification. PaRDeS s
 - 2B dense model fits on 4GB VRAM (1.8GB measured)
 - Faster than Gemma-4-E2B (37 vs 33 tok/s with --reasoning off)
 - Better coding/math than Gemma-4-E2B
-- Supports speculative decoding (DSpark)
+- DSpark speculative decoding: GGUF not found, not tested
 - **Produces working code with --reasoning off**
 
 ### Actual Test Results (GTX 1650, --reasoning off)

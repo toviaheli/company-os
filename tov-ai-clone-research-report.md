@@ -5,7 +5,7 @@
 
 ## Executive Summary
 
-Comprehensive research completed across 4 domains: MoA inference engines, AI clone/marketing tools, fundraising/email marketing, and scholastic research (Bible/midrash). 50+ repos scouted, 12 local LLMs benchmarked, 54 MoA configs tested.
+Comprehensive research completed across 4 domains: MoA inference engines, AI clone/marketing tools, fundraising/email marketing, and scholastic research (Bible/midrash). ~15 repos scouted, 12 local LLMs benchmarked, ~14 MoA configs tested.
 
 **Key Finding:** No single tool combines all needed capabilities. Assembly approach required.
 

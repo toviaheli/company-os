@@ -75,7 +75,7 @@ The creative perspective found that mesh MoA is a solution looking for a problem
 | Quality | Working code | Working code + explanations |
 | Context | 131K | 128K |
 | Coding | ✅ SOTA 2B class | ⚠️ Weaker |
-| Speculative decoding | ✅ DSpark | ❌ |
+| Speculative decoding | ❌ DSpark — GGUF not found | ❌ |
 | Reasoning off | ✅ Works | ✅ Works |
 
 ### Quality Comparison (LCS task)
@@ -102,7 +102,7 @@ def longest_common_subsequence(s1, s2):
 
 ### Verdict: Gemma-4-E2B for quality, MiniCPM5-2B for speed
 - Gemma-4-E2B: better explanations, more detailed
-- MiniCPM5-2B: faster, better coding benchmarks, DSpark support
+- MiniCPM5-2B: faster, better coding benchmarks, DSpark ❌ not available (GGUF not found)
 
 ## Colibri — Pure C MoE Inference Engine (v8 Update)
 
