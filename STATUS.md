@@ -1,4 +1,4 @@
-# STATUS.md — Work Status Dashboard
+# STATUS.md — Work Status Dashboard (COMPREHENSIVE)
 
 *Last updated: 2026-09-19*
 
@@ -6,15 +6,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Sessions audited | 1 (2026-09-19) |
-| Finished work items | 15 |
-| Unfinished work items | 12 |
-| Hallucinated claims found | 6 |
-| Contradictions found | 3 |
+| Sessions audited | 10 (5 cron, 1 desktop, 4 Telegram DM) |
+| Repos reviewed | 3 (company-os, hermes-profile-packs, research-backup) |
+| Hallucinated claims | 6 (company-os) + 17 (Sep 17 audit) |
+| Verified claims | 29 (Sep 17 audit) |
 | API keys working | 7/7 |
-| GitHub sync | ✅ Synced |
+| GitHub sync | ✅ Synced (ea35069) |
 
-## Work Status
+## Company-OS Work Status
 
 ### ✅ Finished (15)
 - Local LLM benchmarking (12 models)
@@ -31,43 +30,80 @@
 - Research tracking log
 - Mesh MoA inference SKILL.md
 - Tov AI clone research report
+- Hallucinated claims fixed (6) ✅
 
 ### ⚠️ Unfinished (12)
-| # | Item | Priority | Status |
-|---|------|----------|--------|
-| 1 | Quality benchmarking | HIGH | No test harness |
-| 2 | Self-MoA test | HIGH | Not started |
-| 3 | Ornith-AD quality test | HIGH | Not started |
-| 4 | Job-specific benchmarks | HIGH | Not started |
-| 5 | DFlash1 config fix | MEDIUM | ctx_other issue |
-| 6 | Split-KV flag | MEDIUM | Not in llama.cpp |
-| 7 | Server lifecycle fix | MEDIUM | Workaround only |
-| 8 | MiniCPM5-2B + DSpark | MEDIUM | GGUF not found |
-| 9 | Clean log parsing | LOW | Housekeeping |
-| 10 | FreeToken test | LOW | Install timed out |
-| 11 | wait_port_free timeout | LOW | 15s→30s |
-| 12 | Cutting-edge techniques | LOW | Backlog only |
+| # | Item | Priority |
+|---|------|----------|
+| 1 | Quality benchmarking | HIGH |
+| 2 | Self-MoA test | HIGH |
+| 3 | Ornith-AD quality test | HIGH |
+| 4 | Job-specific benchmarks | HIGH |
+| 5 | DFlash1 config fix | MEDIUM |
+| 6 | Split-KV flag | MEDIUM |
+| 7 | Server lifecycle fix | MEDIUM |
+| 8 | MiniCPM5-2B + DSpark | MEDIUM |
+| 9 | Clean log parsing | LOW |
+| 10 | FreeToken test | LOW |
+| 11 | wait_port_free timeout | LOW |
+| 12 | Cutting-edge techniques | LOW |
 
-### 🔴 Hallucinated Claims (6)
-1. "54 MoA configs tested" → ~14 actual
-2. "DSpark ✅ MiniCPM5-2B" → GGUF not found
-3. "DSpark support in mesh skill" → not tested
-4. "DFlash1 BEST CANDIDATE" → rejected, slower
-5. "DFlash2 best for old GPUs" → not for Ornith
-6. "All Tests Complete" → contradicted by "Yet to Test"
+### 🔴 Hallucinated Claims
+**Company-os (6 fixed ✅):** DSpark, DFlash1/2, 54 configs, All Tests Complete
+**Sep 17 orchestrator audit (17 🔴):** Baseline errors, mislabeled speeds, impossible claims
 
 ### 🟡 Contradictions (3)
-1. Mesh device status (4 online vs 5 offline)
-2. DSpark availability (✅ vs ❌ GGUF not found)
-3. "All Tests Complete" vs "Yet to Test" sections
+1. Mesh device status
+2. DSpark availability
+3. Testing scope
+
+## Hermes Setup (Sep 14)
+
+| Item | Status |
+|------|--------|
+| Local LLM servers | ✅ ollama:11434, llama-server:8000, litellm:8081 |
+| API keys | ✅ 15 providers configured |
+| Adversarial consensus | ✅ Meta Llama vs Cohere AI |
+| goal_judge | ✅ cohere/command-a-03-2025 |
+| DeepSeek Harness | ✅ v0.3.1 |
+| OMH runtime | ✅ 119 skills |
+| NVIDIA models | ⚠️ PARTIAL (timeout) |
+| DeepSeek key | ❌ TRUNCATED |
+| Portkey/Helicone | ❌ PLACEHOLDER |
+| Stress test | ✅ 10/10, 10/10, 5/5 |
+
+## OMH Workflow Enforcement (Sep 15)
+
+| Item | Status |
+|------|--------|
+| 7/8 evidence points | ✅ VERIFIED |
+| Memory entry for OMH | ❌ MISSING — REJECT verdict |
+| exhaustive-search skill | ✅ Created |
+| Telegram skill v2.0.0 | ✅ State DB reader |
+| Skills separated | ✅ Speed vs abliteration |
+
+## LLM Optimization Audit (Sep 17)
+
+| Item | Status |
+|------|--------|
+| 17 hallucinated claims | 🔴 Identified |
+| 29 verified claims | ✅ Confirmed |
+| 36 unverified claims | 🟡 Need testing |
+| Judge verdicts | 🔄 PENDING |
+
+## Academy CE (hermes-profile-packs)
+
+| Item | Status |
+|------|--------|
+| Phases 4-16 | 📋 Documented, needs audit |
+| Operator branches | 📋 Multiple, needs review |
+| Unpushed commit | ⚠️ b329537 on ornith-benchmark-docs |
 
 ## Next Actions
 
-1. **P0**: Fix 6 hallucinated claims in repo files (today)
-2. **P1**: Resolve 3 contradictions (this week)
-3. **P2**: Complete 4 HIGH priority unfinished items (2 weeks)
-4. **P3**: Improve repo structure with AGENTS.md, DECISIONS.md, STATUS.md (backlog)
-
----
-
-*Dashboard auto-generated from work-audit-2026-09-19.md and omh-plan-2026-09-19.md*
+1. **P0** ✅ Hallucinated claims fixed
+2. **P1** Create OMH memory entry (Sep 15 REJECT gap)
+3. **P2** Complete 4 HIGH priority unfinished items
+4. **P3** DECISIONS.md for repo
+5. **P4** Audit hermes-profile-packs
+6. **P5** Complete Sep 17 audit (judge verdicts)
