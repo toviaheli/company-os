@@ -113,7 +113,7 @@
 | Item | Status |
 |------|--------|
 | Jev pricing | ✅ $0.042/M input, output free |
-|| Jev latency | ✅ 459ms measured on Acer (OpenRouter test) |
+|| Jev latency | ✅ 459ms measured on Acer (TypeSafe direct API test) |
 | Jev accuracy | ⚠️ 67.8% (vendor eval), mid-tier |
 | Independent test | ✅ 777 judgments <0.7s, ~$0.0025 |
 | Browser Use + Jev | ✅ Feasible on Acer |
