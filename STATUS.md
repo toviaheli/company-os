@@ -72,6 +72,23 @@
 | Portkey/Helicone | ❌ PLACEHOLDER |
 | Stress test | ✅ 10/10, 10/10, 5/5 |
 
+## Jev Feasibility (2026-09-19)
+
+| Item | Status |
+|------|--------|
+| RLCD local benchmark | ✅ 27ms avg, 604MB VRAM, Apache 2.0 |
+| TypeSafe API | ⚠️ Needs waitlist key |
+| VRAM on Acer | ✅ 3900MB free |
+| All API keys | ✅ 5/5 working |
+| Vercel Gateway | ❌ Requires credit card |
+| LiteLLM proxy | ❌ No TypeSafe pass-through |
+
+### Real Numbers
+- RLCD: 21-50ms per decision, 95% accuracy, $0 cost
+- TypeSafe Jev: 459ms, $0.042/1M tokens, needs API key
+- VRAM: RLCD (604MB) fits easily in 3900MB free
+
+
 ## OMH Workflow Enforcement (Sep 15)
 
 | Item | Status |

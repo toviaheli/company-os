@@ -77,3 +77,17 @@ to prevent repeating tests and document results for future agents.
 ## Best Result Achieved
 CUDA IQ2_XXS: 20.0 tok/s generation (baseline)
 CUDA IQ2_S: 18.3 tok/s generation (better quality, slightly slower)
+
+## Jev / Decision Router Benchmarks (2026-09-19)
+
+| Test | Backend | Latency | VRAM | Cost | Status |
+|------|---------|---------|------|------|--------|
+| RLCD ModernBERT-151M | Local CUDA | 27.3ms avg | 604MB | $0 | ✅ Working |
+| TypeSafe Jev API | Cloud | 459ms | N/A | $0.042/1M tokens | ⚠️ Needs key |
+| VRAM Available | GTX 1650 | — | 3900MB free | — | ✅ Confirmed |
+
+### Jev Feasibility Verdict
+- RLCD local: 27ms avg, 604MB VRAM, Apache 2.0, no API key — FITS ON ACER
+- TypeSafe cloud: needs waitlist key, 459ms latency — BLOCKED (no key)
+- All 5 API keys working (OpenRouter, NVIDIA, HF, Cohere, Nous)
+- Vercel Gateway: requires credit card — BLOCKED (user won't pay)
