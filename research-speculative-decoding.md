@@ -18,7 +18,7 @@ Both target model + draft model + KV cache must fit in ~4GB. The draft model its
 
 ## 2. Techniques That Work for This Setup
 
-### 2.1 DFlash1 (audreyt/Ornith-1.5-9B-DFlash-GGUF) — BEST CANDIDATE
+### 2.1 DFlash1 (audreyt/Ornith-1.5-9B-DFlash-GGUF) — TESTED, REJECTED
 
 - **Draft model**: audreyt/Ornith-1.5-9B-DFlash-GGUF (HuggingFace)
 - **Format**: GGUF, specifically built as DFlash draft for Ornith-1.5-9B

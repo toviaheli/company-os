@@ -45,7 +45,7 @@ to prevent repeating tests and document results for future agents.
 ## Speculative Decoding Research (COMPLETED)
 - Subagent: deleg_b02c4934 ✅
 - Deliverable: /home/tov/speculative-decoding-research.md ✅
-- Key finding: DFlash1 is BEST CANDIDATE for Ornith on 4GB VRAM
+- Key finding: DFlash1 SLOWER than baseline (2.7 vs 20.0 tok/s) — rejected
 - DFlash2: NOT available for Ornith (only Qwen3.8-27B)
 - MTP: retry with p-min=0.0, no separate drafter needed
 - Ngram-cache: zero VRAM cost, always-on baseline
