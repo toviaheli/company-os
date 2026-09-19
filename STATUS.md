@@ -104,6 +104,18 @@
 | Early access | ⚠️ Waitlist only, not GA |
 | Real benchmarks doc | ✅ `jev-research-brief-2026-09-19.md` |
 
+## Morning Briefing: 3-Tool Comparison (Sep 19)
+
+| Item | Status |
+|------|--------|
+| Jev research | ✅ Complete — pricing, accuracy, latency verified |
+| Browser Use + Jev | ✅ Complete — hardware feasibility confirmed |
+| CrewAI research | ✅ Complete — comparison report written |
+| Morning briefing | ✅ `morning-briefing-2026-09-19.md` — draft for review |
+| CrewAI report | ✅ `crewai-comparison-2026-09-19.md` |
+| Verdict | Jev + Browser Use combo best for Acer; CrewAI overkill |
+| Published | ❌ Saved for review only |
+
 ## Academy CE (hermes-profile-packs)
 
 | Item | Status |
