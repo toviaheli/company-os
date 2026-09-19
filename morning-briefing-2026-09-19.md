@@ -14,7 +14,7 @@
 |--------|-------|-----------|
 | Cost | $0.042/M input tokens, output FREE | ✅ Vendor docs |
 | Per-decision cost | ~$0.0000032 (2000 tokens/decision) | ✅ Calculated |
-| Latency | **459ms measured** (one test via OpenRouter) | ✅ Tested |
+|| Latency | **459ms measured** (TypeSafe direct API test) | ✅ Tested |
 | Accuracy | 67.8% vendor eval (mid-tier) | ✅ Vendor source |
 | Strengths | Extremely cheap, structured output, no prose, 100× faster than LLMs for decisions | |
 | Weaknesses | Cannot generate text, early access waitlist only, 3 question types only | |
