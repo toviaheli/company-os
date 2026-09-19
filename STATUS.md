@@ -10,7 +10,7 @@
 | Repos reviewed | 3 (company-os, hermes-profile-packs, research-backup) |
 | Hallucinated claims | 6 (company-os) + 17 (Sep 17 audit) |
 | Verified claims | 29 (Sep 17 audit) |
-| API keys working | 7/7 |
+|| API keys working | 1/14 (Cohere only) |
 | GitHub sync | ✅ Synced (ea35069) |
 
 ## Company-OS Work Status
@@ -79,7 +79,7 @@
 | RLCD local benchmark | ✅ 27ms avg, 604MB VRAM, Apache 2.0 |
 | TypeSafe API | ⚠️ Needs waitlist key |
 | VRAM on Acer | ✅ 3900MB free |
-| All API keys | ✅ 5/5 working |
+|| All API keys | ❌ Only Cohere works (1/14); OpenRouter 402, NVIDIA 404, HF DNS fail, Groq wrong key |
 | Vercel Gateway | ❌ Requires credit card |
 | LiteLLM proxy | ❌ No TypeSafe pass-through |
 
@@ -113,7 +113,7 @@
 | Item | Status |
 |------|--------|
 | Jev pricing | ✅ $0.042/M input, output free |
-| Jev latency | ✅ 70-500ms (vendor), ~250ms independent |
+|| Jev latency | ✅ 459ms measured on Acer (OpenRouter test) |
 | Jev accuracy | ⚠️ 67.8% (vendor eval), mid-tier |
 | Independent test | ✅ 777 judgments <0.7s, ~$0.0025 |
 | Browser Use + Jev | ✅ Feasible on Acer |

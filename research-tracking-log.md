@@ -87,7 +87,7 @@ CUDA IQ2_S: 18.3 tok/s generation (better quality, slightly slower)
 | VRAM Available | GTX 1650 | — | 3900MB free | — | ✅ Confirmed |
 
 ### Jev Feasibility Verdict
-- RLCD local: 27ms avg, 604MB VRAM, Apache 2.0, no API key — FITS ON ACER
-- TypeSafe cloud: needs waitlist key, 459ms latency — BLOCKED (no key)
-- All 5 API keys working (OpenRouter, NVIDIA, HF, Cohere, Nous)
-- Vercel Gateway: requires credit card — BLOCKED (user won't pay)
+- RLCD local: 27ms avg, 604MB VRAM, Apache 2.0, no API key — FITS ON ACER ✅
+- TypeSafe cloud: needs waitlist key, 459ms latency — BLOCKED (no key) ⚠️
+- **API keys: Only Cohere works for LLM inference. OpenRouter 402 (no credits), NVIDIA 404 (model not found), HF DNS failure, Groq wrong key type** ❌
+- Vercel Gateway: requires credit card — BLOCKED (user won't pay) ⚠️
